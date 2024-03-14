@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga Holidays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="h1">Gogaga Holidays</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Holiday Packages</a></li>
+                    <li><a href="#">Flight Booking</a></li>
+                    <li><a href="#">Hotel Booking</a></li>
+                    <li><a href="#">Package Collections</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Gogaga Holidays</h2>
+            <p>Your ultimate destination for unforgettable adventures!</p>
+        </div>
+    </section>
+
+    <section class="packages">
+
+        <div class="container">
+            <h2 class="h2">Holiday Packages</h2>
+            <div class="row">
+                <div class="container1">
+                    <div class="image1"> <img src="https://w.wallha.com/ws/11/4LrC8c0x.jpg" alt="This is my image." height="250px" width="250px" />
+                        <h1 class="header">Dubai</h1>
+                        <p class="para">Range Starts From INR 35k</p>
+                    </div>
+                    <div class="image1"> <img src="https://media.cntraveler.com/photos/58e3cb5203ca992cb6a9cc1f/master/pass/GettyImages-494386476.jpg" height="250px" width="250px" />
+                        <h1 class="header">Indonesia</h1>
+                        <p class="para">Range Starts From INR 45k</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flight-booking">
+        <div class="container">
+            <h2 class="h2">Flight Booking</h2>
+            <div class="container5 rounded shadow-sm">
+                <form action="">
+                    <div class="row1">
+                        <div class="col-md-2 pe-0 col-sm-12">
+                            <div class="btn radio-btn mb-3">
+                                <label class="radio">
+                                    <input type="radio" value="a" name="book" checked> Roundtrip <span></span> </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pe-0 col-sm-12">
+                            <div class="btn radio-btn mb-3">
+                                <label class="radio">
+                                    <input type="radio" value="a" name="book"> One way <span></span> </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pe-0 col-sm-12">
+                            <div class="btn radio-btn mb-3">
+                                <label class="radio">
+                                    <input type="radio" value="a" name="book"> Multi-City <span></span> </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">FLYING FROM</p>
+                                <input class="inputbox" placeholder="City or Airport" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">FLYING TO</p>
+                                <input class="inputbox" placeholder="City or Airport" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">DEPARTING</p>
+                                <input class="inputbox textmuted" type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">RETURNING</p>
+                                <input class="inputbox textmuted " type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div class="col-md-4 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">ADULTS(18+)</p>
+                                <select class="border-0 outline-none">
+                                    <option value="" hidden selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">CHILDREN(0-17)</p>
+                                <select class="border-0 outline-none">
+                                    <option value="" hidden selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="form-control d-flex flex-column">
+                                <p class="h-blue">TRAVEL CLASS</p>
+                                <select class="border-0 outline-none">
+                                    <option value="" hidden selected>Class</option>
+                                    <option value="1">Economy</option>
+                                    <option value="2">Premium</option>
+                                    <option value="3">Business</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-primary form-control text-center">SHOWN FLIGHTS</div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hotel-booking">
+        <div class="container">
+            <h2 class="h2">Hotel Booking</h2>
+            <form class="booking-form" action="#" method="post">
+                <div class="elem-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div class="elem-group inlined">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="child">Children</label>
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                    <label for="room-selection">Select Room Preference</label>
+                    <select id="room-selection" name="room_preference" required>
+                        <option value="">Choose a Room from the List</option>
+                        <option value="connecting">Connecting</option>
+                        <option value="adjoining">Adjoining</option>
+                        <option value="adjacent">Adjacent</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="elem-group">
+                    <label for="message">Anything Else?</label>
+                    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                </div>
+                <button type="submit">Book The Rooms</button>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="package-collections">
+        <div class="container">
+            <h2 class="h2">Package Collections</h2>
+            <div>
+                <img src="https://images.musement.com/cover/0002/45/dubai-skyline-at-dusk-jpg_header-144981.jpeg?&q=60&fit=crop" width="220px" height="220px" />
+                <h1 class="header ">Dubai</h1>
+                <h3 class="para">3 days accomodation + flights ticket INR 1L</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gogaga Holidays. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
