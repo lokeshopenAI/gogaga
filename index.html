@@ -5,40 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gogaga Holidays</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <style>
-        
+    <header>
+        <div class="container">
+            <h1 class="h1">Gogaga Holidays</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Holiday Packages</a></li>
+                    <li><a href="#">Flight Booking</a></li>
+                    <li><a href="#">Hotel Booking</a></li>
+                    <li><a href="#">Package Collections</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin :0 auto;
 
 }
 
 .row {
     display: flex;
-    align-items: center;
+
+    align-content: auto;
+
 }
 
 .container1 {
-    
+    float: left;
     align-items: center;
     display: flex;
 
 }
 
 .image1 {
-    background-size : cover;
+    float: left;
     padding: 5px;
-    align-items: center;
+    webkit-align-items: auto;
 
 }
 
@@ -48,7 +65,7 @@ body {
 
 .container {
     width: 80%;
-    margin:0 auto;
+    margin: auto;
 }
 
 .h1 {
@@ -64,7 +81,7 @@ header {
 }
 
 header h1 {
-float:left;
+    float: left;
 
 }
 
@@ -127,6 +144,17 @@ footer {
     padding: 20px 0;
 }
 
+body {}
+
+.container2 {
+    margin: 20px auto;
+    padding: 30px 25px;
+    max-width: 800px;
+    flex: left;
+    display: flex;
+    align-items: center;
+}
+
 .container5 {
     background-color: yellow;
     margin: 20px auto;
@@ -163,9 +191,9 @@ footer {
 
 .radio {
     display: inline-block;
-    margin-left: 13px;
+    margin-left: 25px;
     cursor: pointer;
-    font-weight: 500
+    font-weight: 600;
 }
 
 .btn.radio-btn {
@@ -177,8 +205,8 @@ footer {
 }
 
 .radio span {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border: 2px solid #ddd;
     border-radius: 50%;
     display: block;
@@ -221,9 +249,9 @@ footer {
     }
 }
 
-@media screen and (min-width: 80rem) {
+@media (min-width: 80px) {
     .container {
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -292,22 +320,7 @@ button {
 button:hover {
     background: #333;
 }
-    </style>
-    <header>
-        <div class="container">
-            <h1 class="h1">Gogaga Holidays</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Holiday Packages</a></li>
-                    <li><a href="#">Flight Booking</a></li>
-                    <li><a href="#">Hotel Booking</a></li>
-                    <li><a href="#">Package Collections</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+</style>
     <section class="hero">
         <div class="container">
             <h2>Welcome to Gogaga Holidays</h2>
@@ -319,15 +332,17 @@ button:hover {
 
         <div class="container">
             <h2 class="h2">Holiday Packages</h2>
-            <div class="row">
-                <div class="container1">
-                    <div class="image1"> <img src="https://w.wallha.com/ws/11/4LrC8c0x.jpg" alt="This is my image." height="250px" width="250px" />
+            <div class="row container2">
+                <div class="">
+                    <div class="image1"> <img src="https://w.wallha.com/ws/11/4LrC8c0x.jpg" alt="This is my image." height="250px" width="175px" />
                         <h1 class="header">Dubai</h1>
                         <p class="para">Range Starts From INR 35k</p>
                     </div>
-                    <div class="image1"> <img src="https://media.cntraveler.com/photos/58e3cb5203ca992cb6a9cc1f/master/pass/GettyImages-494386476.jpg" height="250px" width="250px" />
-                        <h1 class="header">Indonesia</h1>
-                        <p class="para">Range Starts From INR 45k</p>
+                    <div class="">
+                        <div class="image1"> <img src="https://media.cntraveler.com/photos/58e3cb5203ca992cb6a9cc1f/master/pass/GettyImages-494386476.jpg" height="250px" width="175px" />
+                            <h1 class="header">Indonesia</h1>
+                            <p class="para">Range Starts From INR 45k</p>
+                        </div>
                     </div>
                 </div>
             </div>
